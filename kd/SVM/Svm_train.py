@@ -47,7 +47,7 @@ def createDataSet(dict):
     header=dataset.columns.values;
     print(header)
     length=len(header)
-    X = dataset.iloc[:,[8,9]].values
+    X = dataset.iloc[:,[length-3,length-2]].values
     #vec = DictVectorizer(sparse=False)
     #print(X0.to_dict(orient='record'))
     #X = vec.fit_transform(X0.to_dict(orient='record'))
@@ -56,7 +56,7 @@ def createDataSet(dict):
     #X = fs_tsne.fit_transform(X)
 
 
-    Y0 = dataset.iloc[:,[11]].values
+    Y0 = dataset.iloc[:,[length-1]].values
     Y0=str_column_to_int(Y0,[0])
     Y=[]
     for i in range (0,len(Y0)):
