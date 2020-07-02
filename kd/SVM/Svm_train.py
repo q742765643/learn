@@ -62,7 +62,23 @@ def createDataSet(dict):
     for i in range (0,len(Y0)):
         Y.append(Y0[i][0])
 
-    clf = svm.SVC(gamma='auto')
+    clf = svm.SVC(
+                  C=dict['c'],
+                  kernel=dict['kernel'],
+                  degree=dict['degree'],
+                  gamma=dict['gamma'],
+                  coef0=dict['coef0'],
+                  shrinking=dict['shrinking'],
+                  probability=dict['probability'],
+                  tol=dict['tol'],
+                  cache_size=dict['cache_size'],
+                  class_weight=dict['class_weight'],
+                  verbose=['verbose'],
+                  max_iter=['max_iter'],
+                  decision_function_shape=['decision_function_shape'],
+                  break_ties=['break_ties'],
+                  random_state=['random_state']
+                  )
     clf.fit(X, Y)
     predict=clf.predict(X)
     print(predict)
