@@ -50,12 +50,17 @@ def createDataSet(dict):
 
     clf = joblib.load(dict['model_file_path'])
     predict=clf.predict(X)
+    predict_proba = clf.predict_proba(X)
     out_path=dict['out_file_path']
     out_parent_path=os.path.split(out_path)[0]
     if not os.path.exists(out_parent_path):
         os.makedirs(out_parent_path)
-
-    dataset['type']=predict
+    predict_proba_List = []
+    for i in range(0, len(predict_proba) ):
+         predict_proba_List.append(str(clf.classes_)+str(predict_proba[i]))
+    print(predict_proba)
+    dataset['predict']=predict
+    dataset['predict_proba']=predict_proba_List
     dataset.to_csv(out_path)
 
 if __name__ == "__main__":
