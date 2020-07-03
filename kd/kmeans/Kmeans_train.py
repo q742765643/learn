@@ -73,12 +73,11 @@ def createDataSet(dict):
 
     #pca_sk = PCA(n_components=2)
     #数组降维
-    newMat = X
     if(dimension>=3):
         fs_tsne=TSNE(n_components=2)
-        newMat = fs_tsne.fit_transform(X)
+        X = fs_tsne.fit_transform(X)
 
-    kmeans=KMeans(
+    clf=KMeans(
              n_clusters=dict['n_clusters'],
              init=dict['init'],
              n_init=dict['n_init'],
@@ -94,17 +93,17 @@ def createDataSet(dict):
     #scaler=StandardScaler()#标准化
     #pipeline=make_pipeline(scaler,kmeans)
 
-    predict=kmeans.fit_predict(newMat)
-    label_pred = kmeans.labels_
+    predict=clf.fit_predict(X)
+    label_pred = clf.labels_
     print(predict)
-    centers = kmeans.cluster_centers_
+    centers = clf.cluster_centers_
     print(centers)
 
     model_path=dict['out_file_path']
     model_parent_path=os.path.split(model_path)[0]
     if not os.path.exists(model_parent_path):
         os.makedirs(model_parent_path)
-    joblib.dump(kmeans, model_path)
+    joblib.dump(clf, model_path)
 
     png_path=os.path.splitext(model_path)[0]+".png"
     csv_path=os.path.splitext(model_path)[0]+".csv"
@@ -112,7 +111,7 @@ def createDataSet(dict):
     dataset['type']=predict
     dataset.to_csv(csv_path)
 
-    plt.scatter(np.array(newMat)[:, 0], np.array(newMat)[:, 1], c=predict)
+    plt.scatter(np.array(X)[:, 0], np.array(X)[:, 1], c=predict)
     plt.scatter(centers[:, 0], centers[:, 1], c="r")
     plt.savefig(png_path)
 

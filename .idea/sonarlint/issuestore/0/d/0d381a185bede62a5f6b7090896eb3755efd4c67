@@ -1,0 +1,7 @@
+
+;python:S1253"Remove this commented out code.(©×ÿìþÿÿÿÿ
+ppython:S1542"SRename function "createDict" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(†§Ãâûÿÿÿÿ
+spython:S1542-"VRename function "createDataSet" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(…¿ÍÏøÿÿÿÿ
+;python:S125."Remove this commented out code.(§ê°‰ÿÿÿÿÿ
+_python:S930"HAdd 1 missing arguments; 'createDataSet' expects 1 positional arguments.(¦™ç¤
+Dpython:S1481`",Remove the unused local variable "contours".(¢¬Ó×

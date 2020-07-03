@@ -35,32 +35,21 @@ def createDict(args):
     return dict
 
 def createDataSet(dict):
-    in_file_path=dict['in_file_path']
-    dimension=dict['dimension']
-    dataset = pd.read_csv(in_file_path)#usecols = [3,4]
+    dataset = pd.read_csv(dict['in_file_path'])#usecols = [3,4]
     header=dataset.columns.values;
     length=len(header)
-    #X = dataset.values
-    header=dataset.columns.values;
-    print(header)
+    dimension=dict['dimension']
+
     list =[]
     for i in range(length-dimension, length):
           list.append(i)
-    X = dataset.iloc[:,list].values
 
-    #pca_sk = PCA(n_components=2)
-    #数组降维
-    if(dimension>=3):
-        fs_tsne=TSNE(n_components=2)
-        X = fs_tsne.fit_transform(X)
+    X = dataset.iloc[:,list].values
+    if(dimension>2):
+      X = PCA(n_components=2).fit_transform(X)
 
     clf = joblib.load(dict['model_file_path'])
-    predict=clf.fit_predict(X)
-    label_pred = clf.labels_
-    print(predict)
-    centers = clf.cluster_centers_
-    print(centers)
-
+    predict=clf.predict(X)
     out_path=dict['out_file_path']
     out_parent_path=os.path.split(out_path)[0]
     if not os.path.exists(out_parent_path):
@@ -69,22 +58,5 @@ def createDataSet(dict):
     dataset['type']=predict
     dataset.to_csv(out_path)
 
-    png_path=os.path.splitext(out_path)[0]+".png"
-
-    plt.scatter(np.array(X)[:, 0], np.array(X)[:, 1], c=predict)
-    plt.scatter(centers[:, 0], centers[:, 1], c="r")
-    plt.savefig(png_path)
-
-def modiData(data):
-    x1 = []
-    x2=[]
-    for i in range(0,len(data+1)):
-        x1.append(data[i][0])
-        x2.append(data[i][1])
-    x1=np.array(x1)
-    x2=np.array(x2)
-    #重塑数据
-    X=np.array(list(zip(x1,x2))).reshape(len(x1),2)
-    return X
 if __name__ == "__main__":
     main()
