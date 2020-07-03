@@ -9,6 +9,8 @@ import numpy as np
 from sklearn.manifold import TSNE
 from sklearn.decomposition import PCA
 from sklearn.externals import joblib
+from sklearn.preprocessing import StandardScaler
+from sklearn import preprocessing
 import os
 
 def main():
@@ -28,17 +30,25 @@ def createDict(args):
     dict['degree']=int(args[3]);
     dict['gamma']=args[4];
     dict['coef0']=float(args[5])
-    dict['shrinking']=bool(args[6]);
-    dict['probability']=bool(args[7]);
+    dict['shrinking']=False;
+    if args[6]=='True':
+       dict['shrinking']=True
+    dict['probability']=False;
+    if args[7]=='True':
+       dict['probability']=True
     dict['tol']=float(args[8]);
     dict['cache_size']=int(args[9]);
     if args[10]=='None':
        args[10]=None
     dict['class_weight']=args[10];
-    dict['verbose']=bool(args[11]);
+    dict['verbose']=False;
+    if args[7]=='True':
+       dict['verbose']=True
     dict['max_iter']=int(args[12]);
     dict['decision_function_shape']=args[13];
-    dict['break_ties']=bool(args[14]);
+    dict['break_ties']=False;
+    if args[14]=='True':
+       dict['break_ties']=True
     if args[15]=='None':
        args[15]=None
     dict['random_state']=args[15];
@@ -58,6 +68,8 @@ def createDataSet(dict):
           list.append(i)
 
     X = dataset.iloc[:,list].values
+    scla=StandardScaler()
+    X=scla.fit_transform(X)
     if(dimension>2):
       X = PCA(n_components=2).fit_transform(X)
 
@@ -74,7 +86,10 @@ def createDataSet(dict):
     Y=[]
     for i in range (0,len(Y0)):
         Y.append(Y0[i][0])
+    Y=np.array(Y)
     print(Y)
+
+
     clf = svm.SVC(
                   C=dict['C'],
                   kernel=dict['kernel'],

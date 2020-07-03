@@ -47,7 +47,8 @@ def createDataSet(dict):
     for i in range(length-dimension, length):
           list.append(i)
     X = dataset.iloc[:,list].values
-
+    scla=StandardScaler()
+    X=scla.fit_transform(X)
     #pca_sk = PCA(n_components=2)
     #数组降维
     if(dimension>=3):

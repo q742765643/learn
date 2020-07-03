@@ -44,7 +44,9 @@ def createDict(args):
     if args[8]=='None':
        args[8]=None
     dict['random_state']=args[8];
-    dict['copy_x']=bool(args[9]);
+    dict['copy_x']=False;
+    if args[9]=='True':
+       dict['copy_x']=True
     if args[10]=='None':
        args[10]=None
     dict['n_jobs']=args[10];
@@ -68,6 +70,8 @@ def createDataSet(dict):
           list.append(i)
 
     X = dataset.iloc[:,list].values
+    scla=StandardScaler()
+    X=scla.fit_transform(X)
 
     #print(X)
 

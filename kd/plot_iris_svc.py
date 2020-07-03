@@ -82,6 +82,7 @@ iris = datasets.load_iris()
 # Take the first two features. We could avoid this by using a two-dim dataset
 X = iris.data[:, :2]
 y = iris.target
+print(y)
 
 # we create an instance of SVM and fit out data. We do not scale our
 # data since we want to plot the support vectors
