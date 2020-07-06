@@ -101,7 +101,7 @@ def createDataSet(dict):
                  ccp_alpha=dict['ccp_alpha'])
     print(clf)
     clf.fit(dummyX, dummyY)
-    print('score:',clf.score(dummyX,dummyY))
+    print("training score : %.3f " % (clf.score(dummyX, dummyY)))
     import pydotplus
     from six import StringIO
     dot_data = StringIO()

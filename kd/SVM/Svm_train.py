@@ -109,6 +109,7 @@ def createDataSet(dict):
                   )
     print(clf)
     clf.fit(X, Y)
+    print("training score : %.3f " % (clf.score(X, Y)))
     model_path=dict['out_file_path']
     model_parent_path=os.path.split(model_path)[0]
     if not os.path.exists(model_parent_path):
