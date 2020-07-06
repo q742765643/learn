@@ -51,18 +51,22 @@ def createDataSet(dict):
       X = PCA(n_components=2).fit_transform(X)
 
     clf = joblib.load(dict['model_file_path'])
+    print(clf)
     predict=clf.predict(X)
-    predict_proba = clf.predict_proba(X)
     out_path=dict['out_file_path']
     out_parent_path=os.path.split(out_path)[0]
     if not os.path.exists(out_parent_path):
         os.makedirs(out_parent_path)
-    predict_proba_List = []
-    for i in range(0, len(predict_proba) ):
-         predict_proba_List.append(str(clf.classes_)+str(predict_proba[i]))
-    print(predict_proba)
+    print(clf.probability)
+    if(clf.probability==True):
+        predict_proba = clf.predict_proba(X)
+        predict_proba_List = []
+        for i in range(0, len(predict_proba) ):
+             predict_proba_List.append(str(clf.classes_)+str(predict_proba[i]))
+        print(predict_proba)
+        dataset['predict_proba']=predict_proba_List
+
     dataset['predict']=predict
-    dataset['predict_proba']=predict_proba_List
     dataset.to_csv(out_path,index=0)
 
 if __name__ == "__main__":

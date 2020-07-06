@@ -21,7 +21,15 @@ centers = [[-5, 0], [0, 1.5], [5, -1]]
 X, y = make_blobs(n_samples=1000, centers=centers, random_state=40)
 transformation = [[0.4, 0.2], [-0.4, 1.2]]
 X = np.dot(X, transformation)
-
+column=['X1','X2']
+import pandas as pd
+csvList=pd.DataFrame(columns=column,data=X)
+csvList.to_csv('F:/machineLearning/data/Logistic/train/train.csv',index_label=0,index=0)
+dataset = pd.read_csv('F:/machineLearning/data/Logistic/train/train.csv')
+dataset['Y']=y
+dataset.to_csv('F:/machineLearning/data/Logistic/train/train.csv',index_label=0,index=0)
+csvList=pd.DataFrame(columns=column,data=X)
+csvList.to_csv('F:/machineLearning/data/Logistic/test/test.csv',index_label=0,index=0)
 for multi_class in ('multinomial', 'ovr'):
     clf = LogisticRegression(solver='sag', max_iter=100, random_state=42,
                              multi_class=multi_class).fit(X, y)

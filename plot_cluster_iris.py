@@ -37,7 +37,15 @@ np.random.seed(5)
 iris = datasets.load_iris()
 X = iris.data
 y = iris.target
-
+column=['X1','X2','X3','X4']
+import pandas as pd
+csvList=pd.DataFrame(columns=column,data=X)
+csvList.to_csv('F:/machineLearning/data/Kmeans/train/train.csv',index_label=0,index=0)
+dataset = pd.read_csv('F:/machineLearning/data/Kmeans/train/train.csv')
+#dataset['Y']=y
+#dataset.to_csv('F:/machineLearning/data/Kmeans/train/train.csv',index_label=0,index=0)
+csvList=pd.DataFrame(columns=column,data=X)
+csvList.to_csv('F:/machineLearning/data/Kmeans/test/test.csv',index_label=0,index=0)
 estimators = [('k_means_iris_8', KMeans(n_clusters=8)),
               ('k_means_iris_3', KMeans(n_clusters=3)),
               ('k_means_iris_bad_init', KMeans(n_clusters=3, n_init=1,
