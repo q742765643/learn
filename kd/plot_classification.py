@@ -12,7 +12,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 from sklearn import neighbors, datasets
-
+import pandas as pd
 n_neighbors = 15
 
 # import some data to play with
@@ -28,7 +28,12 @@ h = .02  # step size in the mesh
 # Create color maps
 cmap_light = ListedColormap(['orange', 'cyan', 'cornflowerblue'])
 cmap_bold = ListedColormap(['darkorange', 'c', 'darkblue'])
-
+column=['X1','X2']
+csvList=pd.DataFrame(columns=column,data=X)
+csvList.to_csv('F:/机器学习/knn/train.csv',index_label=0,index=0)
+dataset = pd.read_csv('F:/机器学习/knn/train.csv')
+dataset['Y']=y
+dataset.to_csv('F:/机器学习/knn/train.csv',index_label=0,index=0)
 for weights in ['uniform', 'distance']:
     # we create an instance of Neighbours Classifier and fit the data.
     clf = neighbors.KNeighborsClassifier(n_neighbors, weights=weights)

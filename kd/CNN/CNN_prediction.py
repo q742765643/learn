@@ -44,7 +44,7 @@ def createDataSet(dict):
         data.append(os.path.abspath(each))
         data.append(predict)
         data.append(np.max(predict_proba))
-        print(data)
+        #print(data)
         data_list.append(data)
 
 

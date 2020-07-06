@@ -82,7 +82,7 @@ def createDataSet(dict):
 
 
     Y0 = dataset.iloc[:,[length-1]].values
-    Y0=str_column_to_int(Y0,[0])
+    #Y0=str_column_to_int(Y0,[0])
     Y=[]
     for i in range (0,len(Y0)):
         Y.append(Y0[i][0])
