@@ -55,7 +55,7 @@ def createDataSet(dict):
 
     column=['path','predict','predict_proba']
     csvList=pd.DataFrame(columns=column,data=data_list)
-    csvList.to_csv(out_path)
+    csvList.to_csv(out_path,index=0)
 
 if __name__ == "__main__":
     main()

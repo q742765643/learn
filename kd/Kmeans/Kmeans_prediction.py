@@ -68,7 +68,7 @@ def createDataSet(dict):
         os.makedirs(out_parent_path)
 
     dataset['predict']=predict
-    dataset.to_csv(out_path)
+    dataset.to_csv(out_path,index=0)
 
     png_path=os.path.splitext(out_path)[0]+".png"
 

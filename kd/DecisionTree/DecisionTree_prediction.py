@@ -79,7 +79,7 @@ def createDataSet(dict):
 
     if not os.path.exists(out_parent_path):
         os.makedirs(out_parent_path)
-    X_pred.to_csv(out_path)
+    X_pred.to_csv(out_path,index=0)
 
 
 if __name__ == "__main__":

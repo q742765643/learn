@@ -2,15 +2,9 @@ print(__doc__)
 
 
 import sys
-import matplotlib.pyplot as plt
 import pandas as pd
-from sklearn.cluster import KMeans
-from mpl_toolkits.mplot3d import Axes3D
-import numpy as np
-from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
-from sklearn.manifold import TSNE
 from sklearn.externals import joblib
 import os
 

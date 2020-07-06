@@ -63,7 +63,7 @@ def createDataSet(dict):
     print(predict_proba)
     dataset['predict']=predict
     dataset['predict_proba']=predict_proba_List
-    dataset.to_csv(out_path)
+    dataset.to_csv(out_path,index=0)
 
 if __name__ == "__main__":
     main()
