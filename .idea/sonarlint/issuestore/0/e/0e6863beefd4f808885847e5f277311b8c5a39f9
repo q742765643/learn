@@ -1,0 +1,6 @@
+
+ypython:S117V"VRename this local variable "testY" to match the regular expression ^[_a-z][a-z0-9_]*$.(Øà¥úÿÿÿÿÿ8‚›°”².
+ypython:S117V"VRename this local variable "testX" to match the regular expression ^[_a-z][a-z0-9_]*$.(Øà¥úÿÿÿÿÿ8†¨¯”².
+wpython:S1542"SRename function "createDict" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(†§Ãâûÿÿÿÿ8ª„ ².
+zpython:S1542("VRename function "createDataSet" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(…¿ÍÏøÿÿÿÿ8Žë¦².
+Bpython:S125>"Remove this commented out code.(Æã…äýÿÿÿÿ8¤Ùþ–².
