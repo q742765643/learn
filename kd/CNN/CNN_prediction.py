@@ -38,12 +38,12 @@ def createDataSet(dict):
         image = img_to_array(image)/255.0#归一化
         image = np.expand_dims(image,axis=0)#单张图片，改变维度
         result = model.predict(image)#分类预测
-        predict = np.argmax(result)
-        predict_proba=model.predict_proba(image)
+        proba = np.max(result)#最大概率
+        predict_label = np.argmax(result)#提取最大概率下标
         data =[]
         data.append(os.path.abspath(each))
-        data.append(predict)
-        data.append(np.max(predict_proba))
+        data.append(predict_label)
+        data.append(proba)
         #print(data)
         data_list.append(data)
 
