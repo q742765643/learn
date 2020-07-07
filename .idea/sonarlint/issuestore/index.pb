@@ -37,3 +37,13 @@ C
 kd/KNN/KNN_train.py,1\3\13da2b1131832e140b5b5f80b4f3beec0b7a38db
 C
 kd/CNN/CNN_train.py,0\e\0e6863beefd4f808885847e5f277311b8c5a39f9
+H
+kd/KNN/KNN_prediction.py,8\6\862be131f8ef2461f65bc95fc8d646aa33a72a0a
+H
+kd/CNN/CNN_prediction.py,9\5\95af9dda6c3bac877efd95acefae6c1c87dfc07d
+N
+kd/Kmeans/Kmeans_prediction.py,c\8\c80cdf50d68dd804229fd725c57002b2c163fe05
+I
+kd/Kmeans/Kmeans_train.py,1\4\1420950eddce9da7e2d97c4f56b0c72b3610cdc0
+I
+kd/plot_classification.py,2\a\2ac54b43869ba6f63b8d8ab9fb6943854c486a56

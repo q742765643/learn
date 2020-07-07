@@ -1,4 +1,4 @@
 
-zpython:S1542="VRename function "createDataSet" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(…¿ÍÏøÿÿÿÿ8ĞÙÏ›±.
-Bpython:S125>"Remove this commented out code.(§ê°‰ÿÿÿÿÿ8Œùó±.
 wpython:S1542"SRename function "createDict" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(†§Ãâûÿÿÿÿ8ô¯ß±.
+Bpython:S125>"Remove this commented out code.(§ê°‰ÿÿÿÿÿ8Œùó±.
+zpython:S1542="VRename function "createDataSet" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(…¿ÍÏøÿÿÿÿ8ĞÙÏ›±.

@@ -1,0 +1,5 @@
+
+Bpython:S125 "Remove this commented out code.(§ê°‰ÿÿÿÿÿ8ê ²›².
+zpython:S1542"VRename function "createDataSet" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(…¿ÍÏøÿÿÿÿ8ê ²›².
+†python:S1176"cRename this local variable "predict_proba_List" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ô¿²şÿÿÿÿ8ê ²›².
+wpython:S1542"SRename function "createDict" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(†§Ãâûÿÿÿÿ8ùã®›².

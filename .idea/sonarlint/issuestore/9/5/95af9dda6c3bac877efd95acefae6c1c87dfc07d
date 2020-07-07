@@ -1,0 +1,4 @@
+
+wpython:S1542"SRename function "createDict" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(†§Ãâûÿÿÿÿ8äÊê—².
+vpython:S1179"XRename this local variable "csvList" to match the regular expression ^[_a-z][a-z0-9_]*$.(¼ÿæ«8ş™­˜².
+zpython:S1542"VRename function "createDataSet" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(…¿ÍÏøÿÿÿÿ8äÊê—².

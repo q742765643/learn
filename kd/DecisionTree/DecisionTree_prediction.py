@@ -52,7 +52,7 @@ def createDataSet(dict):
     featureList = []
     for row in [rows for rows in reader]:
             rowDict = {}
-            for i in range(0, len(row) - 1):
+            for i in range(0, len(row)):
                 rowDict[headers[i]] = row[i]
             featureList.append(rowDict)
 

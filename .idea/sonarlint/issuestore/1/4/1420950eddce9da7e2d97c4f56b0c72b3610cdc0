@@ -1,0 +1,8 @@
+
+ppython:S1542#"SRename function "createDict" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(†§Ãâûÿÿÿÿ
+Rpython:S1481f".Remove the unused local variable "label_pred".(©ÈŠ¶úÿÿÿÿ8ò©­”±.
+6python:S125N"Remove this commented out code.(•ªĞ¿
+;python:S125A"Remove this commented out code.(ÕÚ×Øÿÿÿÿÿ
+spython:S1542;"VRename function "createDataSet" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(…¿ÍÏøÿÿÿÿ
+6python:S125>"Remove this commented out code.(û÷î
+Bpython:S125a"Remove this commented out code.(ÔáÚ¶üÿÿÿÿ8ò©­”±.

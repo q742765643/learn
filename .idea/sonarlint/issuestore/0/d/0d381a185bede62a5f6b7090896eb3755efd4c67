@@ -1,6 +1,7 @@
 
-Bpython:S125="Remove this commented out code.(§ê°‰ÿÿÿÿÿ8Õ‘í›±.
-gpython:S1763ª"GDelete this unreachable code or refactor the code to make it reachable.(ÃÓôÅ8åâÒ“±.
-Bpython:S125L"Remove this commented out code.(©×ÿìþÿÿÿÿ8Õ‘í›±.
-wpython:S1542"SRename function "createDict" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(†§Ãâûÿÿÿÿ8Õ‘í›±.
 zpython:S1542<"VRename function "createDataSet" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(…¿ÍÏøÿÿÿÿ8Õ‘í›±.
+wpython:S1542"SRename function "createDict" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(†§Ãâûÿÿÿÿ8Õ‘í›±.
+Bpython:S125="Remove this commented out code.(§ê°‰ÿÿÿÿÿ8Õ‘í›±.
+gpython:S1763«"GDelete this unreachable code or refactor the code to make it reachable.(ÃÓôÅ8åâÒ“±.
+Bpython:S125L"Remove this commented out code.(©×ÿìþÿÿÿÿ8­¤¹œ².
+=python:S125U"Remove this commented out code.(Ì¼üÐ8­¤¹œ².
