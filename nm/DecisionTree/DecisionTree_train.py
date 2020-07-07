@@ -103,24 +103,26 @@ def createDataSet(dict):
     print(clf)
     clf.fit(dummyX, dummyY)
     print("training score : %.3f " % (clf.score(dummyX, dummyY)))
-    import pydotplus
+
     from six import StringIO
     dot_data = StringIO()
     model_path = dict['out_file_path']
     model_parent_path = os.path.split(model_path)[0]
     if not os.path.exists(model_parent_path):
         os.makedirs(model_parent_path)
-    pdf_path = os.path.splitext(model_path)[0] + ".pdf"
+    # pdf_path = os.path.splitext(model_path)[0] + ".pdf"
     dot_path = os.path.splitext(model_path)[0] + ".dot"
     with open(dot_path, 'w') as f:
         f = tree.export_graphviz(clf, out_file=f, class_names=clf.classes_,
                                  feature_names=vec.get_feature_names())
+    '''
     tree.export_graphviz(clf, out_file=dot_data, feature_names=vec.get_feature_names(),
                          class_names=clf.classes_,
                          filled=True, rounded=True,
                          special_characters=True)
-    graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
-    graph.write_pdf(pdf_path)
+    '''
+    # graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
+    # graph.write_pdf(pdf_path)
 
     joblib.dump(clf, model_path)
     plt.figure()
