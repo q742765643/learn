@@ -1,0 +1,12 @@
+
+ppython:S1542"SRename function "createDict" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(†§Ãâûÿÿÿÿ
+mpython:S117F"WRename this local variable "X_pred" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÃáÛ{
+python:S117-"cRename this local variable "allElectronicsData" to match the regular expression ^[_a-z][a-z0-9_]*$.(Å«“çúÿÿÿÿ
+npython:S117<"WRename this local variable "dummyX" to match the regular expression ^[_a-z][a-z0-9_]*$.(è¦¨›
+xpython:S1172"\Rename this local variable "featureList" to match the regular expression ^[_a-z][a-z0-9_]*$.(½åÕ¶øÿÿÿÿ
+tpython:S1174"XRename this local variable "rowDict" to match the regular expression ^[_a-z][a-z0-9_]*$.(²á†ûøÿÿÿÿ
+python:S117C"eRename this local variable "y_predict_proba_List" to match the regular expression ^[_a-z][a-z0-9_]*$.(¡žñàüÿÿÿÿ
+spython:S1542 "VRename function "createDataSet" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(…¿ÍÏøÿÿÿÿ
+6python:S125!"Remove this commented out code.(ÿ°ÇÚ
+;python:S125#"Remove this commented out code.(ƒäåøÿÿÿÿ
+;python:S125%"Remove this commented out code.(«Š£Áþÿÿÿÿ

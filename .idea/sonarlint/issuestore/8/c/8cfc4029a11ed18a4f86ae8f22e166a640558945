@@ -1,0 +1,10 @@
+
+{python:S1542
+"WRename function "createDataList" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(Æ…ä»şÿÿÿÿ8‚ÇÌ•‡/
+spython:S1854"NRemove this assignment to local variable 'type_size'; the value is never used.(Ÿ†‘ øÿÿÿÿ8ÍÀî•‡/
+rpython:S1542Z"SRename function "dataReader" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(ÿï·ù8“âÕ’‡/
+rpython:S1542Q"SRename function "dataMapper" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(­®ìÃ8’¿Õ’‡/
+python:S1542e"]Rename function "networkConfiguration" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(‘Í¼—ıÿÿÿÿ8ãˆâ‘‡/
+spython:S117†"TRename this parameter "savaPath" to match the regular expression ^[_a-z][a-z0-9_]*$.(²±µ8µæ°•‡/
+wpython:S117
+"TRename this parameter "filePath" to match the regular expression ^[_a-z][a-z0-9_]*$.(Æ…ä»şÿÿÿÿ8æÎ•‡/

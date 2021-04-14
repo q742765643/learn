@@ -1,0 +1,4 @@
+
+spython:S15420"VRename function "createDataSet" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(…¿ÍÏøÿÿÿÿ
+;python:S1251"Remove this commented out code.(§ê°‰ÿÿÿÿÿ
+ppython:S1542"SRename function "createDict" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(†§Ãâûÿÿÿÿ

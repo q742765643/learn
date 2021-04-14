@@ -1,0 +1,8 @@
+
+Kpython:S1481`".Remove the unused local variable "label_pred".(©ÈŠ¶úÿÿÿÿ
+6python:S125H"Remove this commented out code.(•ªĞ¿
+;python:S125;"Remove this commented out code.(ÕÚ×Øÿÿÿÿÿ
+;python:S125["Remove this commented out code.(ÔáÚ¶üÿÿÿÿ
+6python:S1258"Remove this commented out code.(û÷î
+ppython:S1542"SRename function "createDict" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(†§Ãâûÿÿÿÿ
+spython:S15425"VRename function "createDataSet" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(…¿ÍÏøÿÿÿÿ

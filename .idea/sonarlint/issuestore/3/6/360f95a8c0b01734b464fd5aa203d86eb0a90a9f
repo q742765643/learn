@@ -1,0 +1,4 @@
+
+opython:S117<"XRename this local variable "csvList" to match the regular expression ^[_a-z][a-z0-9_]*$.(¼ÿæ«
+spython:S1542""VRename function "createDataSet" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(…¿ÍÏøÿÿÿÿ
+ppython:S1542"SRename function "createDict" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(†§Ãâûÿÿÿÿ

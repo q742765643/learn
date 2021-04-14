@@ -1,0 +1,7 @@
+
+ppython:S1542"SRename function "createDict" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(†§Ãâûÿÿÿÿ
+spython:S1542="VRename function "createDataSet" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(…¿ÍÏøÿÿÿÿ
+;python:S125>"Remove this commented out code.(§ê°‰ÿÿÿÿÿ
+6python:S125U"Remove this commented out code.(Ì¼üÐ
+`python:S1763«"GDelete this unreachable code or refactor the code to make it reachable.(ÃÓôÅ
+;python:S125M"Remove this commented out code.(©×ÿìþÿÿÿÿ

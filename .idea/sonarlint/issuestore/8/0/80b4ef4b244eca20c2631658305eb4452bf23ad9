@@ -1,0 +1,9 @@
+
+kpython:S1542\"SRename function "dataReader" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(ÿï·ù
+tpython:S1542"WRename function "createDataList" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(Æ…ä»şÿÿÿÿ
+lpython:S1854‘"NRemove this assignment to local variable 'type_size'; the value is never used.(Ÿ†‘ øÿÿÿÿ
+lpython:S117ˆ"TRename this parameter "savaPath" to match the regular expression ^[_a-z][a-z0-9_]*$.(²±µ
+zpython:S1542g"]Rename function "networkConfiguration" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(‘Í¼—ıÿÿÿÿ
+Kpython:S1481Â",Remove the unused local variable "use_cuda".(éÄí8æšòŸ‡/
+ppython:S117"TRename this parameter "filePath" to match the regular expression ^[_a-z][a-z0-9_]*$.(Æ…ä»şÿÿÿÿ
+kpython:S1542S"SRename function "dataMapper" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(­®ìÃ
